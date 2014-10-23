@@ -54,6 +54,9 @@ if [ -z "$args" ]; then
   exit 0
 fi
 
+shift
+args+=" $@"
+
 echo "Base directory: $DIRECTORY"
 
 echo "$DIRECTORY/mojo_shell $args"
